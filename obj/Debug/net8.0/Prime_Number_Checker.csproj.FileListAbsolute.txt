@@ -1,0 +1,15 @@
+C:\Assignment\Prime_Number_Checker\bin\Debug\net8.0\Prime_Number_Checker.exe
+C:\Assignment\Prime_Number_Checker\bin\Debug\net8.0\Prime_Number_Checker.deps.json
+C:\Assignment\Prime_Number_Checker\bin\Debug\net8.0\Prime_Number_Checker.runtimeconfig.json
+C:\Assignment\Prime_Number_Checker\bin\Debug\net8.0\Prime_Number_Checker.dll
+C:\Assignment\Prime_Number_Checker\bin\Debug\net8.0\Prime_Number_Checker.pdb
+C:\Assignment\Prime_Number_Checker\obj\Debug\net8.0\Prime_Number_Checker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Assignment\Prime_Number_Checker\obj\Debug\net8.0\Prime_Number_Checker.AssemblyInfoInputs.cache
+C:\Assignment\Prime_Number_Checker\obj\Debug\net8.0\Prime_Number_Checker.AssemblyInfo.cs
+C:\Assignment\Prime_Number_Checker\obj\Debug\net8.0\Prime_Number_Checker.csproj.CoreCompileInputs.cache
+C:\Assignment\Prime_Number_Checker\obj\Debug\net8.0\Prime_Number_Checker.sourcelink.json
+C:\Assignment\Prime_Number_Checker\obj\Debug\net8.0\Prime_Number_Checker.dll
+C:\Assignment\Prime_Number_Checker\obj\Debug\net8.0\refint\Prime_Number_Checker.dll
+C:\Assignment\Prime_Number_Checker\obj\Debug\net8.0\Prime_Number_Checker.pdb
+C:\Assignment\Prime_Number_Checker\obj\Debug\net8.0\Prime_Number_Checker.genruntimeconfig.cache
+C:\Assignment\Prime_Number_Checker\obj\Debug\net8.0\ref\Prime_Number_Checker.dll
