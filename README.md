@@ -1,7 +1,81 @@
-# Prime-Number-Checker
-This program check whether the given number is prime or not.
+# Time Complexity 
+### Total Time Complexity: O(sqrt(n))
+```csharp
+namespace PrimeNumberChecker
+{
+    class PrimeOrNot
+    {   
+        // Main Method
+        static void Main(string[] args)
+        {
+            int number;
 
-- Prompt the user to enter a number.
-- Check if the number is prime.
-- Display a message indicating whether the number is prime or not.
-- Handle invalid inputs.
+            // Try block to handle exception
+            try
+            {
+                // Prompt user to enter a number
+                Console.WriteLine("Enter the number to check prime or not: ");
+                number = Convert.ToInt32(Console.ReadLine()); // Time Complexity: O(1)
+
+                // Check if the number is prime or not and display the result
+                if (isPrime(number)) // Time Complexity: O(sqrt(n))
+                {
+                    Console.WriteLine("Given number {0} is Prime", number);
+                }
+                else
+                {
+                    Console.WriteLine("Given number {0} is Not Prime", number);
+                }
+            }
+
+            // Catch block to handle exception
+            catch (FormatException)
+            {
+                Console.WriteLine("Invalid input Please enter valid integer");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error occured: " + e.Message);
+            }
+            // finally block
+            finally
+            {
+                Console.WriteLine("Operation Completed...");
+            }
+            
+        }
+
+        // Method to check the given number is prime or not
+        static bool isPrime(int number)
+        {
+            // Try block to handle exception
+            try
+            {
+                // The number less than or equal to 1 are not prime
+                if (number <= 1) // Time Complexity: O(1)
+                    return false;
+
+                // 2 is the only even prime number    
+                if (number == 2) // Time Complexity: O(1)
+                    return true;
+
+                // Check the factors from 2 to the square root of the number
+                for (int i = 2; i <= Math.Sqrt(number); i++) // Time Complexity: O(sqrt(n))
+                {
+                    // If the factor is found then the number is not prime
+                    if (number % i == 0) // Time Complexity: O(1)
+                        return false;
+                }
+                
+                // If no factors are found then the given number is prime
+                return true;
+            }
+            // Catch block to handle exception
+            catch (Exception e)
+            {
+                Console.WriteLine("Error occured in isPrime Method: " + e.Message);
+                return false;
+            }
+        }
+    }
+}
