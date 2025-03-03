@@ -14,17 +14,17 @@ namespace PrimeNumberChecker
             try
             {
                 // Prompt user to enter a number
-                Console.WriteLine("Enter the number to check prime or not: ");
-                number = Convert.ToInt32(Console.ReadLine()); // Time Complexity: O(1)
+                String Message = "Enter the number to check prime or not: ";
+                number = GetIntInput(Message); // Time Complexity: O(1)
 
                 // Check if the number is prime or not and display the result
                 if (isPrime(number)) // Time Complexity: O(sqrt(n))
                 {
-                    Console.WriteLine("Given number {0} is Prime", number);
+                    Console.WriteLine("\nGiven number {0} is Prime", number);
                 }
                 else
                 {
-                    Console.WriteLine("Given number {0} is Not Prime", number);
+                    Console.WriteLine("\nGiven number {0} is Not Prime", number);
                 }
             }
 
@@ -76,6 +76,17 @@ namespace PrimeNumberChecker
                 Console.WriteLine("Error occured in isPrime Method: " + e.Message);
                 return false;
             }
+        }
+        // Method to prompt user for integer input with validation
+        static int GetIntInput (String Message)
+        {
+            Console.Write(Message);
+            int number;
+            while (!int.TryParse(Console.ReadLine(), out number))
+            {
+                Console.Write("Please enter the valid integer to check prime or not: ");
+            }
+            return number;
         }
     }
 }
