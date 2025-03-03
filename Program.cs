@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Total TimeComplexity: O(sqrt(n))
+
+using System;
 namespace PrimeNumberChecker
 {
     class PrimeOrNot
@@ -13,10 +15,10 @@ namespace PrimeNumberChecker
             {
                 // Prompt user to enter a number
                 Console.WriteLine("Enter the number to check prime or not: ");
-                number = Convert.ToInt32(Console.ReadLine());
+                number = Convert.ToInt32(Console.ReadLine()); // Time Complexity: O(1)
 
                 // Check if the number is prime or not and display the result
-                if (isPrime(number))
+                if (isPrime(number)) // Time Complexity: O(sqrt(n))
                 {
                     Console.WriteLine("Given number {0} is Prime", number);
                 }
@@ -50,18 +52,18 @@ namespace PrimeNumberChecker
             try
             {
                 // The number less than or equal to 1 are not prime
-                if (number <= 1) 
+                if (number <= 1) // Time Complexity: O(1)
                     return false;
 
                 // 2 is the only even prime number    
-                if (number == 2) 
+                if (number == 2) // Time Complexity: O(1)
                     return true;
 
                 // Check the factors from 2 to the square root of the number
-                for (int i = 2; i <= Math.Sqrt(number); i++)
+                for (int i = 2; i <= Math.Sqrt(number); i++) // Time Complexity: O(sqrt(n))
                 {
                     // If the factor is found then the number is not prime
-                    if (number % i == 0) 
+                    if (number % i == 0) // Time Complexity: O(1)
                         return false;
                 }
                 
