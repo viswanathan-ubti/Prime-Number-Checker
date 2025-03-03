@@ -13,7 +13,7 @@ namespace PrimeNumberChecker
             // Try block to handle exception
             try
             {
-                // Prompt user to enter a number
+                // Prompt for user to enter a number
                 String Message = "Enter the number to check prime or not: ";
                 number = GetIntInput(Message); // Time Complexity: O(1)
 
@@ -29,10 +29,6 @@ namespace PrimeNumberChecker
             }
 
             // Catch block to handle exception
-            catch (FormatException)
-            {
-                Console.WriteLine("Invalid input Please enter valid integer");
-            }
             catch (Exception e)
             {
                 Console.WriteLine("Error occured: " + e.Message);
